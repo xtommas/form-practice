@@ -1,0 +1,171 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* END OF CSS RESET */
+
+:root {
+    --background: #272a37;
+    --secondary: #9AA5B5;
+    --accent: #1D90F5;
+    --input: #323644;
+    --input-focused: #3D404B;
+}
+
+body {
+    display: flex;
+    flex-direction: row;
+    background-color: var(--background);
+    align-items: center;
+    height: 100vh;
+    justify-content: space-evenly;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.left {
+    display: flex;
+    flex-direction: column;
+}
+
+h3 {
+    font-size: 100px;
+    color: white;
+    font-weight: 700;
+}
+
+.left-text {
+    font-size: 20px;
+    color: var(--secondary);
+    padding-left: 10px;
+    padding-top: 10px;
+}
+
+.right {
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(255, 255, 255, 0.05);
+    border-radius: 10px;
+    padding: 40px;
+}
+
+h2{
+    color: white;
+    font-size: 40px;
+    font-weight: 700;
+    align-self: center;
+}
+
+.p-right {
+    color: var(--secondary);
+    align-self: center;
+    margin-top: 20px;
+}
+
+a {
+   color: var(--accent); 
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    margin-top: 50px;
+}
+
+.form-row {
+    display: flex;
+    /*border: 1px solid var(--accent);*/
+}
+
+.form-group {
+    position: relative;
+    /*border: 1px solid red;*/
+    display: flex;
+    width: 100%;
+    margin: 10px;
+}
+
+input {
+    padding: 30px 10px 10px 10px;
+    background-color: var(--background);
+    color: white;
+    border: 0;
+    border-radius: 5px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 17px;
+    width: 100%;
+}
+
+input:focus, input:active{
+    outline: none;
+    box-shadow: 0 0 0 2px var(--accent);
+}
+
+label {
+    color: var(--secondary);
+    position: absolute;
+    font-size: 12px;
+    top: 5px;
+    left: 10px;
+}
+
+input, label {
+    display: flex;
+    flex-direction: column;
+}
+
+button {
+    background-color: var(--accent);
+    align-self: flex-end;
+    margin-top: 70px;
+    border: none;
+    padding: 15px 30px 15px 30px;
+    border-radius: 5px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 17px;
+    color: white;
+    margin-right: 10px;
+}
+
+button:hover {
+    cursor: pointer;
+}
